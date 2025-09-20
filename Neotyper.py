@@ -10,7 +10,7 @@ def fail_safe_listener():
     def on_press(key):
         global terminate_flag
         try:
-            if key.char == ']':
+            if key.char == '`':
                 print("Fail-safe triggered. Exiting...")
                 terminate_flag = True
                 # Stop listener
